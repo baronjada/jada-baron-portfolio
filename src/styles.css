@@ -1,9 +1,20 @@
-h1 {
-  font-family: "Raleway", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: "Roboto Slab", serif;
   font-weight: 700 !important;
 }
 
-p {
+.hero {
+  background-color: #ccdbc5;
+  text-align: center;
+}
+
+.hero p {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-size: 36px;
 }
