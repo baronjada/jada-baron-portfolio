@@ -5,41 +5,43 @@
   --default-font-family: "Raleway", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
   font-family: var(--default-font-family);
 }
 
 h1 {
   font-weight: 700;
   font-size: 96px;
-}
-
-a,
-h2 {
-  font-weight: 500;
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 54px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .hero {
-  text-align: center;
   background-color: var(--background-colour);
+  text-align: center;
+  padding: 160px 20px;
 }
 
 .hero p {
-  font-weight: 400;
   font-size: 36px;
   margin: 0;
 }
 
-.hero .btn-branding {
+.btn-branding {
   background: var(--primary-colour);
   color: white;
   font-size: 18px;
@@ -48,7 +50,53 @@ h2 {
   line-height: 28px;
 }
 
-.hero .btn-branding:hover {
+.btn-branding:hover {
   background: var(--accent-colour);
   color: black;
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--primary-colour);
+  color: black;
+  font-size: 18px;
+  border-radius: 16px;
+  padding: 12px 24px;
+  line-height: 28px;
+}
+
+.btn-branding-outline:hover {
+  background: var(--accent-colour);
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  .project-content {
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 900px) {
+  .project-content {
+    padding: 30px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 80px 10px;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 1.7;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .project-content {
+    padding: 0 16px;
+    text-align: center;
+  }
 }
