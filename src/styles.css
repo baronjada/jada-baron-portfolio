@@ -69,26 +69,29 @@ p {
   color: white;
 }
 
-.project-content {
-  padding: 0px 60px;
+@media (min-width: 1200px) {
+  .project-content {
+    padding: 0px 60px;
+  }
 }
 
 @media (max-width: 1200px) {
   .hero {
-    padding: 80px 10px;
+    padding: 90px 10px;
   }
 
   h1 {
     font-size: 64px;
-    line-height: 1.7;
+    line-height: 1.2;
+    margin: 26px 0;
   }
 
   h2 {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .project-content {
-    padding: 0 16px;
     text-align: center;
+    padding: 0 10px;
   }
 }
