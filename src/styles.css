@@ -9,19 +9,37 @@ body {
   font-family: var(--default-font-family);
 }
 
+.homepage-hero {
+  background-color: var(--background-colour);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.about-hero {
+  padding: 120px 20px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1.5;
 }
 
+.about-hero h1 {
+  font-size: 64px;
+}
+
 h2 {
   font-size: 54px;
 }
 
-.hero h2 {
+.homepage-hero h2 {
   font-size: 24px;
   line-height: 1.5;
+}
+
+.about-hero h2 {
+  font-size: 18px;
 }
 
 p {
@@ -30,15 +48,13 @@ p {
   line-height: 30px;
 }
 
-.hero {
-  background-color: var(--background-colour);
-  text-align: center;
-  padding: 160px 20px;
-}
-
-.hero p {
+.homepage-hero p {
   font-size: 36px;
   margin: 0;
+}
+
+.about-hero-content {
+  margin: 30px;
 }
 
 .btn-branding {
@@ -69,6 +85,21 @@ p {
   color: white;
 }
 
+.about-photo {
+  width: 480px;
+}
+
+@media (max-width: 992px) {
+  .about-hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .about-projects-button {
+    margin-bottom: 42px;
+  }
+}
+
 @media (min-width: 1200px) {
   .project-content {
     padding: 0px 60px;
@@ -76,7 +107,7 @@ p {
 }
 
 @media (max-width: 1200px) {
-  .hero {
+  .homepage-hero {
     padding: 90px 10px;
   }
 
@@ -86,7 +117,7 @@ p {
     margin: 26px 0;
   }
 
-  h2 {
+  .home-project-titles {
     font-size: 36px;
   }
 
