@@ -93,5 +93,6 @@ p {
   .project-content {
     text-align: center;
     padding: 0 10px;
+    margin-bottom: 28px;
   }
 }
