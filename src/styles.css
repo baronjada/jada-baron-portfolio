@@ -2,7 +2,7 @@
   --background-colour: #f3eeea;
   --primary-colour: #776b5d;
   --accent-colour: #b0a695;
-  --default-font-family: "Raleway", sans-serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -69,16 +69,8 @@ p {
   color: white;
 }
 
-@media (min-width: 1400px) {
-  .project-content {
-    padding: 80px 60px;
-  }
-}
-
-@media (max-width: 1400px) and (min-width: 900px) {
-  .project-content {
-    padding: 30px 60px;
-  }
+.project-content {
+  padding: 30px 60px;
 }
 
 @media (max-width: 1200px) {
