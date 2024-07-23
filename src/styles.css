@@ -70,7 +70,7 @@ p {
 }
 
 .project-content {
-  padding: 30px 60px;
+  padding: 0px 60px;
 }
 
 @media (max-width: 1200px) {
