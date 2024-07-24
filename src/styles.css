@@ -64,8 +64,8 @@ h2 {
 }
 
 .btn-branding {
-  border: 1px solid black;
-  color: black;
+  background: black;
+  color: white;
   font-size: 18px;
   border-radius: 16px;
   padding: 12px 24px;
@@ -74,8 +74,8 @@ h2 {
 }
 
 .btn-branding:hover {
-  background: black;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .btn-branding-content {
