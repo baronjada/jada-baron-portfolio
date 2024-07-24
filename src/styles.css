@@ -1,7 +1,7 @@
 :root {
-  --background-colour: #f3eeea;
-  --primary-colour: #776b5d;
-  --accent-colour: #b0a695;
+  ---hero-background-colour: #b0a69588;
+  --primary-colour: #b0a695;
+  --secondary-colour: #776b5d;
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -10,7 +10,8 @@ body {
 }
 
 .homepage-hero {
-  background-color: var(--background-colour);
+  background-color: var(---hero-background-colour);
+  color: black;
   text-align: center;
   padding: 160px 20px;
 }
@@ -63,30 +64,32 @@ h2 {
 }
 
 .btn-branding {
-  background: var(--primary-colour);
-  color: white;
+  border: 1px solid black;
+  color: black;
   font-size: 18px;
   border-radius: 16px;
   padding: 12px 24px;
   line-height: 28px;
+  font-weight: 500;
 }
 
 .btn-branding:hover {
-  background: var(--accent-colour);
-  color: black;
+  background: black;
+  color: white;
 }
 
-.btn-branding-outline {
-  border: 1px solid var(--primary-colour);
+.btn-branding-content {
+  border: 1px solid var(--secondary-colour);
   color: black;
   font-size: 18px;
   border-radius: 16px;
   padding: 12px 24px;
   line-height: 28px;
+  font-weight: 500;
 }
 
-.btn-branding-outline:hover {
-  background: var(--accent-colour);
+.btn-branding-content:hover {
+  background: var(--primary-colour);
   color: white;
 }
 
@@ -96,11 +99,11 @@ h2 {
 
 a {
   color: black;
-  text-decoration-color: var(--primary-colour);
+  text-decoration-color: var(--secondary-colour);
 }
 
 a:hover {
-  color: var(--primary-colour);
+  color: var(--secondary-colour);
 }
 
 @media (max-width: 992px) {
