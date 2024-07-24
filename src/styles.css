@@ -94,6 +94,15 @@ h2 {
   width: 480px;
 }
 
+a {
+  color: black;
+  text-decoration-color: var(--primary-colour);
+}
+
+a:hover {
+  color: var(--primary-colour);
+}
+
 @media (max-width: 992px) {
   .content-container {
     text-align: center;
