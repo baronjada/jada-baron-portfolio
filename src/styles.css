@@ -1,7 +1,8 @@
 :root {
-  ---hero-background-colour: #b0a69588;
-  --primary-colour: #b0a695;
-  --secondary-colour: #776b5d;
+  --primary-colour: #776b5d;
+  --secondary-colour: #b0a695;
+  --accent-colour: #b0a69588;
+
   --heading-font-family: "Roboto Slab", serif;
   --body-font-family: "Open Sans", sans-serif;
 }
@@ -30,7 +31,8 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 nav li {
@@ -47,11 +49,11 @@ nav a {
 
 nav a:hover,
 nav li.active a {
-  color: var(--secondary-colour);
+  color: var(--primary-colour);
 }
 
 .homepage-hero {
-  background-color: var(---hero-background-colour);
+  background-color: var(--accent-colour);
   color: black;
   text-align: center;
   padding: 160px 20px;
@@ -73,6 +75,10 @@ h1 {
 
 h2 {
   font-size: 54px;
+}
+
+h4 {
+  font-size: 44px;
 }
 
 .homepage-hero h2 {
@@ -105,7 +111,7 @@ h2 {
 }
 
 .btn-branding {
-  background: black;
+  background: var(--primary-colour);
   color: white;
   font-size: 18px;
   border-radius: 16px;
@@ -115,12 +121,12 @@ h2 {
 }
 
 .btn-branding:hover {
-  border: 1px solid black;
+  border: 1px solid var(--primary-colour);
   color: black;
 }
 
 .btn-branding-content {
-  border: 1px solid var(--secondary-colour);
+  border: 1px solid var(--primary-colour);
   color: black;
   font-size: 18px;
   border-radius: 16px;
@@ -130,7 +136,7 @@ h2 {
 }
 
 .btn-branding-content:hover {
-  background: var(--primary-colour);
+  background: var(--secondary-colour);
   color: white;
 }
 
@@ -140,11 +146,46 @@ h2 {
 
 a {
   color: black;
-  text-decoration-color: var(--secondary-colour);
+  text-decoration-color: var(--primary-colour);
 }
 
 a:hover {
-  color: var(--secondary-colour);
+  color: var(--primary-colour);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-cta {
+  background-color: var(--accent-colour);
+  padding: 60px 80px;
+  border-radius: 16px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--primary-colour);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-colour);
+  background-color: var(--accent-colour);
+  padding: 10px 18px;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--primary-colour);
 }
 
 @media (max-width: 992px) {
@@ -182,7 +223,6 @@ a:hover {
   .homepage-content {
     text-align: center;
     padding: 0 10px;
-    margin-bottom: 28px;
   }
 
   nav ul {
@@ -191,5 +231,13 @@ a:hover {
 
   nav li {
     margin-left: 12px;
+  }
+
+  footer .contact-cta {
+    padding: 40px 60px;
+  }
+
+  footer .contact-cta a {
+    padding: 14px 20px;
   }
 }
