@@ -2,11 +2,21 @@
   ---hero-background-colour: #b0a69588;
   --primary-colour: #b0a695;
   --secondary-colour: #776b5d;
-  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Roboto Slab", serif;
+  --body-font-family: "Silka", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
 }
 
 body {
-  font-family: var(--default-font-family);
+  font-family: var(--body-font-family);
 }
 
 .logo {
