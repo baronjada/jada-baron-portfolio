@@ -43,11 +43,11 @@ nav {
   background-color: var(--accent-colour);
   color: black;
   text-align: center;
-  padding: 160px 20px;
+  padding: 120px 20px;
 }
 
 .content-container {
-  padding: 120px 20px;
+  padding: 100px 20px;
 }
 
 h1 {
@@ -64,8 +64,14 @@ h2 {
   font-size: 54px;
 }
 
-h4 {
+h3 {
   font-size: 44px;
+}
+
+.inner-content h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 36px;
 }
 
 .homepage-hero h2 {
@@ -75,11 +81,6 @@ h4 {
 
 .content-container h2 {
   font-size: 18px;
-}
-
-.inner-content h3 {
-  font-size: 26px;
-  line-height: 1.5;
 }
 
 .inner-content p {
@@ -131,6 +132,10 @@ h4 {
   width: 480px;
 }
 
+.work-images:hover {
+  opacity: 0.7;
+}
+
 a {
   color: black;
   text-decoration-color: var(--primary-colour);
@@ -153,7 +158,7 @@ footer .contact-cta {
 footer .email-link {
   text-decoration: none;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 footer .email-link:hover {
