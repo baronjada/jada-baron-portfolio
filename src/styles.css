@@ -190,6 +190,10 @@ footer .social-links a:hover {
   .about-projects-button {
     margin-bottom: 42px;
   }
+
+  footer .contact-cta {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -219,10 +223,11 @@ footer .social-links a:hover {
   }
 
   footer .contact-cta {
-    padding: 40px 60px;
+    padding: 36px 44px;
   }
 
   footer .contact-cta a {
     padding: 14px 20px;
+    margin-top: 24px;
   }
 }
